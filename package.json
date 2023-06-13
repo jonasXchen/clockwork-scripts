@@ -1,0 +1,24 @@
+{
+  "name": "spl-transfer",
+  "version": "1.0.0",
+  "description": "SPL Transfer Example",
+  "scripts": {
+    "burn": "ts-node ./src/main.ts"
+  },
+  "dependencies": {
+    "@clockwork-xyz/sdk": "^0.3.4",
+    "@coral-xyz/anchor": "^0.27.0",
+    "@solana/spl-token": "^0.3.6",
+    "@solana/web3.js": "^1.73.0",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
