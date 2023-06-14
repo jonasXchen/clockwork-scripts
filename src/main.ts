@@ -46,7 +46,7 @@ async function main() {
     const ata = new PublicKey("CPbrA95v3deetmbdCocTxnwAJmqJdm2w8B3z4P3pLgyk")
     const owner = new PublicKey("BRLwFQMYVMnqxvTn5CZ2b9Zgpz8ZKgf3XnUygEoNAapa")
 
-    const tx = await createBurnNftThreadTx(clockworkProvider, trigger, mint, ata, owner, authority)
+    const tx = await createBurnNftThreadTx(clockworkProvider, trigger, mint, owner, authority)
     const sig = await clockworkProvider.anchorProvider.sendAndConfirm(tx);
     console.log(`Thread created: https://solscan.io/tx/${sig}?cluster=devnet`);
 
